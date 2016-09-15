@@ -319,19 +319,16 @@ load_model_parameters_theano('./data/rnn-theano-200-867-2016-09-13-19-28-06.npz'
     Performing gradient check for parameter U with size 173400.
     Gradient check for parameter U passed.
     Performing gradient check for parameter V with size 173400.
-    Gradient Check ERROR: parameter=V ix=(590, 51)
-    +h Loss: 27.089568
-    -h Loss: 27.089568
-    Estimated_gradient: -0.000000
-    Backpropagation gradient: -0.000000
-    Relative Error: 0.022393
+    Gradient check for parameter V passed.
+    Performing gradient check for parameter W with size 40000.
+    Gradient check for parameter W passed.
     Loaded model parameters from ./data/rnn-theano-200-867-2016-09-13-19-28-06.npz. hidden_dim=200 word_dim=867
 
 
 
 ```python
 num_sentences = 10
-senten_min_length = 25
+senten_min_length = 22
 string = 'show: '
 new_sentences = []
 for i in range(num_sentences):
@@ -345,25 +342,25 @@ for i in range(num_sentences):
 ```
 
     show: 1
-    S1, You Ain't Goin' Nowhere, Wilson, Silent in the Morning, David Bowie, Llama, Memories, Amazing Grace, Cavern, My Favorite Things, Stash, Cavern, Dec 1661, Driver, No Quarter, ENCORE, Sleeping Monkey, Llama, Roll in My Sweet Baby's Arms, Emotional Rescue, Tower Jam, Character Zero, Hold Your Head Up, Possum, END
+    S1, Take the 'A' Train, Dog Faced Boy, You Enjoy Myself, The Squirming Coil, Art Jam, Big Pimpin', Meatstick, Golgi Apparatus, Love You, Sleeping Monkey, The Fog That Surrounds, S3, Tweezer Reprise, ENCORE, Run Like an Antelope, ENCORE, Funky Bitch, Foreplay/Long Time, Feel the Heat, The Squirming Coil, Caravan, Run Like an Antelope, ENCORE, Tubthumping, Frankenstein, END
     show: 2
-    S1, Family Picture, I Didn't Know, Good Times Bad Times, Good Times Bad Times, Taste, Melt the Guns, Willin', Good Times Bad Times, The Star Spangled Banner, The Squirming Coil, I Don't Care, ENCORE, Uncle Pen, Look Out Cleveland, Cavern, Four Strong Winds, Possum, ENCORE, Frankenstein, Sweet Adeline, Sweet Adeline, Guyute, Poor Heart, Free Bird, END
+    S1, The Sloth, You Enjoy Myself, First Tube, My Soul, Runaway Jim, Dave's Energy Guide, Self, Rocky Top, Alumni Blues, Sweet Adeline, American Woman, The Oh Kee Pa Ceremony, Amazing Grace, Timber, Watcher of the Skies, Fluffhead, ENCORE, Highway to Hell, Cavern, Sweet Adeline, David Bowie, Cavern, Mean Mr. Mustard, ENCORE, Golgi Apparatus, END
     show: 3
-    S1, David Bowie, Family Picture, Dog Faced Boy, Contact, Wildwood Weed, Twenty Years Later, If I Only Had a Brain, Messin' with The Kid, AC/DC Bag, AC/DC Bag, First Tube, Camel Walk, Sleeping Monkey, Billy Breathes, Joy, Piggies, Amazing Grace, Carini, Alumni Blues, Nellie Kane, Crosseyed and Painless, You Better Believe It Baby, Good Times Bad Times, ENCORE, Ginseng Sullivan, Tweezer Reprise, END
+    S1, Jam, Divided Sky, David Bowie, You Shook Me All Night Long, Nine Years (and One Dark Day), Bittersweet Motel, Harry Hood, Contact, Golgi Apparatus, Bathtub Gin, I Gave My Love a Cherry, Amazing Grace, Reba, Bittersweet Motel, Jam, Waste, Possum, Timber (Jerry), ENCORE, Golgi Apparatus, Rocky Top, END
     show: 4
-    S1, Slave to the Traffic Light, When the Cactus is in Bloom, Skin It Back, The Squirming Coil, Silent in the Morning, Llama, The Inlaw Josie Wales, Lengthwise, Golgi Apparatus, Roll Like a Cantaloupe, The Ballad of Curtis Loew, You Enjoy Myself, Piper, Suzy Greenberg, Jam, Split Open and Melt, Fluffhead, The Squirming Coil, Halley's Comet, ENCORE, The Oh Kee Pa Ceremony, Suzy Greenberg, ENCORE, Sweet Adeline, Whipping Post, END
+    S1, Brain Damage, I Didn't Know, Bertha, Llama, Split Open and Melt, Eliza, Rift, Llama, Harry Hood, Slipknot!, In the Aeroplane Over the Sea, Highway to Hell, Reba, Wilson, Demand, Character Zero, ENCORE, Gloria, Reba, Fire, END
     show: 5
-    S1, No Reply At All, Dog Faced Boy, Chalk Dust Torture, You Enjoy Myself, Contact, Fluffhead, ENCORE, Suzy Greenberg, Rocky Top, Jam, I Don't Care, Good Times Bad Times, ENCORE, Contact, Sparkle, Bill Bailey, Harry Hood, Loup Garou, Gotta Jibboo, You Enjoy Myself, Hold Your Head Up, Slave to the Traffic Light, ENCORE, Rock and Roll, Good Times Bad Times, END
+    S1, The Star Spangled Banner, Friday, Train Song, Possum, Terrapin Station, Amazing Grace, Carolina, Funky Bitch, Sweet Adeline, Bill Bailey, Golgi Apparatus, Loving Cup, When the Circus Comes, Sailin' Shoes, Bouncing Around the Room, Runaway Jim, You Enjoy Myself, Alumni Blues, Run Like an Antelope, ENCORE, Loving Cup, Tweezer Reprise, END
     show: 6
-    S1, Scarlet Begonias, Satin Doll, Ginseng Sullivan, The Squirming Coil, Taste, Sweet Adeline, Amazing Grace, AC/DC Bag, Gumbo, Amidst the Peals of Laughter, Blue Sky, David Bowie, S2, Sleep, Character Zero, My Mind's Got a Mind of its Own, Loving Cup, ENCORE, Boogie On Reggae Woman, Bug, Tweezer Reprise, ENCORE, Carolina, END
+    S1, Weekapaug Groove, The Moma Dance, Hold Your Head Up, Tweezer, I Am Hydrogen, Possum, Golgi Apparatus, Cavern, Cavern, Amazing Grace, Heavy Things, Weekapaug Groove, Sweet Adeline, Buried Alive, Run Like an Antelope, ENCORE, You Enjoy Myself, Stash, S4, Nellie Kane, Life on Mars?, ENCORE, Waste, Rocky Top, END
     show: 7
-    S1, Freeworld, Back Porch Boogie Blues, I Been to Georgia on a Fast Train, Runaway Jim, Walk Away, Llama, You Enjoy Myself, ENCORE, Contact, Bouncing Around the Room, Happy Birthday to You, Punch You In the Eye, Piper, Theme From the Bottom, Wipe Out, Cold Water, Wildwood Weed, Dust in the Wind, Fire, ENCORE, Sleeping Monkey, Buffalo Bill, Train Round the Bend, Iron Man, Good Times Bad Times, ENCORE, David Bowie, END
+    S1, Tweezer Reprise, Mike's Song, Party Time, The Asse Festival, Maze, Magilla, Sweet Adeline, Chalk Dust Torture, Harry Hood, S2, I Been to Georgia on a Fast Train, S4, Messin' with The Kid, Sand, Run Like an Antelope, ENCORE, Brian and Robert, Tweezer Reprise, ENCORE, Contact, END
     show: 8
-    S1, The Gambler, Run Like an Antelope, Chalk Dust Torture, S2, Guyute, Tweezer Reprise, Hello My Baby, I Am Hydrogen, Doin' My Time, Possum, Meatstick, Nellie Kane, The Sloth, To France, My Friend My Friend, Piggies, Suzy Greenberg, ENCORE, Goin' Down Slow, Cavern, Camel Walk, Uncle Pen, You Enjoy Myself, ENCORE, Sweet Adeline, Cavern, ENCORE, La Grange, END
+    S1, The Sloth, Dog Faced Boy, Mike's Song, Ginseng Sullivan, Maze, Sweet Adeline, Rocky Top, Runaway Jim, Theme From the Bottom, Nowhere Fast, A Day in the Life, La Grange, The Old Home Place, David Bowie, Free Bird, My Friend My Friend, Jam, Slave to the Traffic Light, ENCORE, Contact, Tweezer Reprise, END
     show: 9
-    S1, The Haunted House, Heavy Things, No Reply At All, Free Bird, Sparkle, Alumni Blues, Wild Honey Pie, Harry Hood, David Bowie, My Soul, To France, The Squirming Coil, Run Like an Antelope, ENCORE, The Squirming Coil, David Bowie, You Enjoy Myself, The Mango Song, Amazing Grace, Golgi Apparatus, Julius, ENCORE, Good Times Bad Times, END
+    S1, Messin' with The Kid, Chalk Dust Torture, Jam, If I Only Had a Brain, Uncle Pen, Highway to Hell, Free Bird, Whipping Post, Middle of the Road, Cool It Down, Tweezer Reprise, Tweezer Reprise, Cavern, Contact, Rocky Top, Sanity, Possum, ENCORE, Wilson, Amazing Grace, Colonel Forbin's Ascent, Carolina, Possum, ENCORE, Contact, END
     show: 10
-    S1, ENCORE, ENCORE, ENCORE, Runaway Jim, Ginseng Sullivan, Sweet Adeline, Hello My Baby, Suzy Greenberg, ENCORE, Happiness Is a Warm Gun, Memories, Sweet Adeline, Funky Bitch, Yerushalayim Shel Zahav, McGrupp and the Watchful Hosemasters, Amazing Grace, Cavern, Character Zero, ENCORE, Loving Cup, ENCORE, Sweet Adeline, Tweezer Reprise, END
+    S1, Flat Fee, Mike's Song, I Am Hydrogen, Runaway Jim, David Bowie, The Asse Festival, While My Guitar Gently Weeps, Amazing Grace, You Enjoy Myself, I Gave My Love a Cherry, Taste, Reba, The Sloth, Golgi Apparatus, The Last Step, My Funny Valentine, Run Like an Antelope, ENCORE, Also Sprach Zarathustra, It's Ice, Something, ENCORE, Carolina, END
 
 
 #### Similarity by Cosine
@@ -389,7 +386,7 @@ plt.ylabel('Cosine similarity')
 plt.show()
 ```
 
-    similarity average by cosine similarity:0.500653036531
+    similarity average by cosine similarity:0.504649961185
 
 
 
@@ -419,7 +416,7 @@ plt.ylabel('set similarity')
 plt.show()
 ```
 
-    similarity average by SET similarity:0.331097560976
+    similarity average by SET similarity:0.286054766734
 
 
 
@@ -439,8 +436,10 @@ plt.show()
     - We had excpectation that the model would realize the real construction of a show. As out of 1776 shows 1381 had at least two sets. A proper Second generated only once in a proper position. 
     - On the other hand, model learnd **very well** that ENCORE should be placed few words before end of a sentence, but it was still placed in strange positions. 
     - Most generated shows contains at least one obscured song which played by the band only during the 80's or early 90's and still it's in the same list with new songs the band is playing.
+    - Songs repeating in a show is not a rare thing. Sometimes the band plays sandwiches song. Example of a real show (27/7/2014 @ Columbia, MD):
+    > S1,Fee,The Curtain With,46 Days,555,My Sweet One,Sand,Bouncing Around the Room,Saw It Again,Fuego,You Enjoy Myself,S2,Wilson,Tweezer,Back on the Train,Tweezer,Back on the Train,Tweezer,Waiting All Night,Free,Tweezer,Simple,Tweezer,Free,Catapult,Slave to the Traffic Light,Down with Disease,NICU,Jam,Hold Your Head Up,Jennifer Dances,Hold Your Head Up,I Been Around,ENCORE,Boogie On Reggae Woman,Tweezer Reprise,END
 
 - Project was so much fun, We've enjoyed doing the while thing top to bottom. Going through old shows and find out about songs you never heard of is the biggest bonus of the while thing. 
 
     ![Phish @ San Francisco, CA. Taken By Ido July 2016](phish.png)
-                                    Phish @ San Francisco, CA. Taken By Ido July 2016
+                              Phish @ San Francisco, CA. Taken By Ido July 2016

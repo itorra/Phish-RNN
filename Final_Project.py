@@ -115,7 +115,7 @@ print ("\ny:\n%s\n%s" % (" ".join([index_to_word[x] for x in y_example]), y_exam
 
 # Run the model with gradientcheck using the GPU
 model = RNNTheano(vocabulary_size, hidden_dim=200)
-#gradient_check_theano(model, [0,1,2,3], [1,2,3,4])
+gradient_check_theano(model, [0,1,2,3], [1,2,3,4])
 
 # Re-Create model parameteres - alreday done
 #train_with_sgd(model, X_train, y_train, nepoch=_NEPOCH, learning_rate=_LEARNING_RATE)
